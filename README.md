@@ -1,12 +1,27 @@
-# Twitter-clone
-## Task 1
-See Assignment 5.
+## Twitter-clone
 
-## Task 2
-Implement the tiny twitter clone found at this repo, using only Redis as a data store.
+### Made by Amalie, Amanda, Benjamin
 
-You need to implement the two classes PostManagementImpl and UserManagementImpl, and to run the unit tests by right clicking the Java folder under Test, and choosing Run ‘All Tests’.
-You are allowed to change the interface and DTOs, just write a small readme listing the changes.
+We have added a constructor to the DTO called UserOverview. 
 
-## Task 3
-In a readme, write a short explanation of your redis data model. It should be clear enough for a developer to be able to implement the same thing.
+Our Redis database have a list of users containing usernames of all users registered. 
+
+Each user is represented by username as key as follows
+- user/{INSERT USERNAME}/firstname
+- user/{INSERT USERNAME}/lastname
+- user/{INSERT USERNAME}/passwordhash
+- user/{INSERT USERNAME}/birthday
+
+Besides this we have a value called "userCount" which is incremented everytime a user is created. 
+
+Each user have a set of followers and following:
+- user/{INSERT USERNAME}/following
+- user/{INSERT USERNAME}/followers
+
+Furthermore each user has a sorted set of posts containing the messages of the post and sorted by timestamp:
+- user/{INSERT USERNAME}/post
+
+
+
+
+

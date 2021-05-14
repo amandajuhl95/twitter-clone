@@ -4,6 +4,12 @@
 
 We have added a constructor to the DTO called UserOverview. 
 
+This is the link for [UserManagementImpl](https://github.com/amandajuhl95/twitter-clone/blob/main/src/main/java/dk/cphbusiness/mrv/twitterclone/impl/UserManagementImpl.java)
+
+This is the link for [PostManagementImpl](https://github.com/amandajuhl95/twitter-clone/blob/main/src/main/java/dk/cphbusiness/mrv/twitterclone/impl/PostManagementImpl.java)
+
+### Short explanation of Our redis Data Model
+
 Our Redis database have a list of users containing usernames of all users registered. 
 
 Each user is represented by username as key as follows
